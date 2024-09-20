@@ -1,0 +1,51 @@
+.about {
+    /* height: 100vh; */
+    display: flex;
+    padding: 10rem 5rem;
+}
+
+.about .imgFp img {
+    width: 13rem;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 15px;
+}
+
+.about .tentang {
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.about .tentang p {
+    text-align: justify;
+}
+
+.about .tentang .title {
+    margin-top: -30px;
+}
+
+.about .tentang .title h1,
+.about .tentang .title h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.about .tentang .title h2 {
+    margin-top: -40px;
+}
+
+@media (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about .imgFp {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .about .tentang {
+        margin: 0;
+    }
+}

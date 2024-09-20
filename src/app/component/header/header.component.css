@@ -1,0 +1,25 @@
+mat-toolbar {
+    background-color: rgb(3, 3, 70);
+    color: white;
+    font-size: 20px;
+}
+
+mat-toolbar .email {
+    margin-right: 20px;
+}
+
+mat-toolbar i {
+    margin-right: 5px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+    mat-toolbar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

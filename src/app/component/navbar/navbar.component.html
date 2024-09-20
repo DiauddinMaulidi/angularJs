@@ -1,0 +1,17 @@
+<mat-toolbar id="navbarId" [class.sticky-nav]="bannerIsScroll">
+    <div class="title">
+        <span>MyScholl</span>
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="menu-btn" (click)="toggleClass()" aria-label="menu btn">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div class="menu-collapse">
+        <mat-list role="list" class="list-menu" [ngClass]="{'tes': isActive}">
+            <mat-list-item (click)="gotoDiv('beranda')"><span>Beranda</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('about')"><span>About</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('news')"><span>News</span></mat-list-item>
+            <mat-list-item (click)="gotoDiv('students')"><span>Students</span></mat-list-item>
+        </mat-list>
+    </div>
+</mat-toolbar>

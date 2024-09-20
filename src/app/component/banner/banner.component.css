@@ -1,0 +1,82 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-section {
+  height: 89%;
+  position: relative;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-container swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.banner-section .banner-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-section .banner-overlay .banner-description {
+  color: white;
+  text-align: center;
+}
+
+.banner-section .banner-overlay .banner-description h1 {
+  font: 800 28px/32px "Poppins", sans-serif !important;
+}
+
+.banner-section .banner-overlay .banner-description h2 {
+  font: 100 18px/32px "Poppins", sans-serif !important;
+  margin-top: -15px;
+}
+
+.banner-section .banner-overlay .banner-description .btn-pendaftaran {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .banner-section .banner-overlay .banner-description h1 {
+    font: 800 1.5rem/32px "Poppins", sans-serif !important;
+  }
+
+  .banner-section .banner-overlay .banner-description h2 {
+    font: 800 1rem/32px "Poppins", sans-serif !important;
+  }
+}
